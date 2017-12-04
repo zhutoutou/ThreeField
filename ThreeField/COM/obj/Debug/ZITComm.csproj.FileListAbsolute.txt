@@ -1,0 +1,5 @@
+E:\C# 通讯\ZITCommunication\ZITComm\ZITComm\obj\Debug\ResolveAssemblyReference.cache
+E:\C# 通讯\ZITCommunication\ZITComm\ZITComm\bin\Debug\ZITComm.dll
+E:\C# 通讯\ZITCommunication\ZITComm\ZITComm\bin\Debug\ZITComm.pdb
+E:\C# 通讯\ZITCommunication\ZITComm\ZITComm\obj\Debug\ZITComm.dll
+E:\C# 通讯\ZITCommunication\ZITComm\ZITComm\obj\Debug\ZITComm.pdb

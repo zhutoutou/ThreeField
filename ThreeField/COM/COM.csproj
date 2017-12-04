@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11912480-CCB9-489B-A745-86822A8101EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZIT</RootNamespace>
+    <AssemblyName>ZIT.Comm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\ThreadSafeList.cs" />
+    <Compile Include="Collections\ThreadSafeSortedList.cs" />
+    <Compile Include="Communication\Comm\Client\ClientReConnecter.cs" />
+    <Compile Include="Communication\Comm\Client\IConnectableClient.cs" />
+    <Compile Include="Communication\Comm\Client\IScsClient.cs" />
+    <Compile Include="Communication\Comm\Client\ScsClientBase.cs" />
+    <Compile Include="Communication\Comm\Client\ScsClientFactory.cs" />
+    <Compile Include="Communication\Comm\Client\Tcp\ScsTcpClient.cs" />
+    <Compile Include="Communication\Comm\Client\Tcp\TcpHelper.cs" />
+    <Compile Include="Communication\Comm\Communication\Channels\CommunicationChannelBase.cs" />
+    <Compile Include="Communication\Comm\Communication\Channels\CommunicationChannelEventArgs.cs" />
+    <Compile Include="Communication\Comm\Communication\Channels\ConnectionListenerBase.cs" />
+    <Compile Include="Communication\Comm\Communication\Channels\ICommunicationChannel.cs" />
+    <Compile Include="Communication\Comm\Communication\Channels\IConnectionListener.cs" />
+    <Compile Include="Communication\Comm\Communication\Channels\Tcp\TcpCommunicationChannel.cs" />
+    <Compile Include="Communication\Comm\Communication\Channels\Tcp\TcpConnectionListener.cs" />
+    <Compile Include="Communication\Comm\Communication\CommunicationException.cs" />
+    <Compile Include="Communication\Comm\Communication\CommunicationStateException.cs" />
+    <Compile Include="Communication\Comm\Communication\CommunicationStates.cs" />
+    <Compile Include="Communication\Comm\Communication\EndPoints\ScsEndPoint.cs" />
+    <Compile Include="Communication\Comm\Communication\EndPoints\Tcp\ScsTcpEndPoint.cs" />
+    <Compile Include="Communication\Comm\Communication\Messages\IScsMessage.cs" />
+    <Compile Include="Communication\Comm\Communication\Messages\MessageEventArgs.cs" />
+    <Compile Include="Communication\Comm\Communication\Messages\ScsMessage.cs" />
+    <Compile Include="Communication\Comm\Communication\Messages\ScsPingMessage.cs" />
+    <Compile Include="Communication\Comm\Communication\Messages\ScsRawDataMessage.cs" />
+    <Compile Include="Communication\Comm\Communication\Messages\ScsTextMessage.cs" />
+    <Compile Include="Communication\Comm\Communication\Messengers\IMessenger.cs" />
+    <Compile Include="Communication\Comm\Communication\Messengers\RequestReplyMessenger.cs" />
+    <Compile Include="Communication\Comm\Communication\Messengers\SynchronizedMessenger.cs" />
+    <Compile Include="Communication\Comm\Communication\Protocols\BinarySerialization\BinarySerializationProtocol.cs" />
+    <Compile Include="Communication\Comm\Communication\Protocols\BinarySerialization\BinarySerializationProtocolFactory.cs" />
+    <Compile Include="Communication\Comm\Communication\Protocols\IScsWireProtocol.cs" />
+    <Compile Include="Communication\Comm\Communication\Protocols\IScsWireProtocolFactory.cs" />
+    <Compile Include="Communication\Comm\Communication\Protocols\WireProtocolManager.cs" />
+    <Compile Include="Communication\Comm\Server\IScsServer.cs" />
+    <Compile Include="Communication\Comm\Server\IScsServerClient.cs" />
+    <Compile Include="Communication\Comm\Server\ScsServerBase.cs" />
+    <Compile Include="Communication\Comm\Server\ScsServerClient.cs" />
+    <Compile Include="Communication\Comm\Server\ScsServerFactory.cs" />
+    <Compile Include="Communication\Comm\Server\ScsServerManager.cs" />
+    <Compile Include="Communication\Comm\Server\ServerClientEventArgs.cs" />
+    <Compile Include="Communication\Comm\Server\Tcp\ScsTcpServer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Threading\SequentialItemProcessor.cs" />
+    <Compile Include="Threading\Timer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

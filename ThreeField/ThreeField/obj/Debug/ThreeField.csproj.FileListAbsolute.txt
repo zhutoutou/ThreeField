@@ -1,0 +1,5 @@
+D:\Code\ThreeField\ThreeField\ThreeField\obj\Debug\ThreeField.csprojResolveAssemblyReference.cache
+D:\Code\ThreeField\ThreeField\ThreeField\obj\Debug\ZIT.ThreeField.MainUI.frmAbout.resources
+D:\Code\ThreeField\ThreeField\ThreeField\obj\Debug\ZIT.ThreeField.MainUI.MainUI.resources
+D:\Code\ThreeField\ThreeField\ThreeField\obj\Debug\ZIT.ThreeField.MainUI.Properties.Resources.resources
+D:\Code\ThreeField\ThreeField\ThreeField\obj\Debug\ThreeField.csproj.GenerateResource.Cache
