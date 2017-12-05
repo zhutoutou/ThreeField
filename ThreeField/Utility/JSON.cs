@@ -9,8 +9,9 @@ using System.Collections.Generic;
 using System.Runtime.Serialization.Json;
 using System.IO;
 using System.Text;
+using ZIT.ThreeField.Utility;
 
-namespace ZIT.EXTEND.Utils
+namespace ZIT.ThreeField.Utils
 {
     /// <summary>
     ///JSON 的摘要说明

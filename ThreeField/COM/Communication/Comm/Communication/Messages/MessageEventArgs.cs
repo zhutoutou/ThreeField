@@ -13,13 +13,13 @@ namespace ZIT.Communication.Comm.Communication.Messages
         /// <summary>
         /// Message object that is associated with this event.
         /// </summary>
-        public string Message { get; private set; }
+        public IScsMessage Message { get; private set; }
 
         /// <summary>
         /// Creates a new MessageEventArgs object.
         /// </summary>
         /// <param name="message">Message object that is associated with this event</param>
-        public MessageEventArgs(string message)
+        public MessageEventArgs(IScsMessage message)
         {
             Message = message;
         }

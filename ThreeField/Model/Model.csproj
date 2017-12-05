@@ -41,14 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ALARM_EVENT_INFO.cs" />
-    <Compile Include="Basic\ExMsg.cs" />
-    <Compile Include="Basic\MsgType.cs" />
+    <Compile Include="Basic\ClientType.cs" />
     <Compile Include="Basic\OnlineUnit.cs" />
-    <Compile Include="ParameterSql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VEHICLEHISTROYSTATE.cs" />
-    <Compile Include="VEHICLEREALSTATUS.cs" />
+    <Compile Include="tfReponse.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

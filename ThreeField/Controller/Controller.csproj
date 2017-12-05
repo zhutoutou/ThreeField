@@ -46,8 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GPSServer\GServer.cs" />
-    <Compile Include="GPSServer\GServerMsgHandler.cs" />
     <Compile Include="CoreService.cs" />
     <Compile Include="NetStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,6 +53,7 @@
     <Compile Include="TFServer\ServerClient.cs" />
     <Compile Include="TFServer\TFServer.cs" />
     <Compile Include="TFServer\ThreeFieldMsgHandler.cs" />
+    <Compile Include="TFServer\UnitsEventArgs.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

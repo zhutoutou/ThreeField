@@ -9,15 +9,19 @@ using ZIT.Communication.Comm.Communication;
 using ZIT.Communication.Comm.Communication.Messages;
 using ZIT.Communication.Comm.Server;
 using ZIT.ThreeField.Model;
+using ZIT.ThreeField.Utility;
 
 namespace ZIT.ThreeField.Controller
 {
-    public class RouteServer
+    public class TFServer
     {
         /// <summary>
         /// 与YMChannel连接客户端改变事件
         /// </summary>
-        public event EventHandler<StatusEventArgs> ServerConnectedClientChanged;
+        public event EventHandler<UnitsEventArgs> ServerConnectedClientChanged;
+
+        public event TFReponseHandler TFReponseHandlerEvent;
+        public delegate void TFReponseHandler(tfReponse tfr);
 
         internal IScsServer ScsServer;
 
@@ -31,7 +35,7 @@ namespace ZIT.ThreeField.Controller
         public ReaderWriterLockSlim OnlineClentsLock;
 
 
-        public RouteServer()
+        public TFServer()
         {
             OnlineClentsLock = new ReaderWriterLockSlim(LockRecursionPolicy.NoRecursion); ;
             OnlineClents = new List<ServerClient>();
@@ -53,7 +57,9 @@ namespace ZIT.ThreeField.Controller
         }
 
         public void Stop()
-        { }
+        {
+            ScsServer.Stop();
+        }
 
         /// <summary>
         /// //客户端已连接
@@ -71,6 +77,7 @@ namespace ZIT.ThreeField.Controller
             Client.intClientID = e.Client.ClientId;
             Client.Status = NetStatus.Connected;
             e.Client.MessageReceived += new EventHandler<MessageEventArgs>(Client.MessageReceived);
+
             OnlineClentsLock.EnterWriteLock();
             try
             {
@@ -115,7 +122,7 @@ namespace ZIT.ThreeField.Controller
             }
             catch (Exception ex)
             {
-                LogHelper.WriteLog("Error Occurred", ex);
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, ex.Message.ToString(), new LogUtility.RunningPlace("TFServer", "Server_ClientDisconnected"), "通讯报错");
             }
         }
 
@@ -188,6 +195,15 @@ namespace ZIT.ThreeField.Controller
             }
         }
 
+        public void OnTFReponseHandlerEvent(tfReponse tfr)
+        {
+            TFReponseHandler handler = TFReponseHandlerEvent;
+
+            if (handler != null)
+            {
+                handler(tfr);
+            }
+        }
         /// <summary>
         /// 检测YMChannel client是否正常
         /// </summary>
@@ -207,18 +223,118 @@ namespace ZIT.ThreeField.Controller
                         if (DateTime.Now.Subtract(ScsServer.Clients[item.intClientID].LastReceivedMessageTime) > new TimeSpan(0, 0, SharkHandsTime * 5 + 5)
                             || (DateTime.Now.Subtract(item.dtClientConnTime) > new TimeSpan(0, 0, 10) && item.Status != NetStatus.Login))
                         {
-                            LogHelper.WriteLog("断开通讯不正常的客户端连接,IP:" + item.strClientIP + "Port:" + item.strClientPort);
+                            LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "根据握手超时,手动断开通讯不正常的客户端连接,IP:" + item.strClientIP + "Port:" + item.strClientPort, new LogUtility.RunningPlace("TFServer", "CheckConnectedStatus_Thread"), "TCP通讯");
                             ScsServer.Clients[item.intClientID].Disconnect();
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    //LogHelper.WriteLog("", ex);
+                    LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, ex.Message.ToString(), new LogUtility.RunningPlace("TFServer", "CheckConnectedStatus_Thread"), "业务逻辑错误");
                 }
             }
         }
 
+
+        //调用TcpServer发送消息
+        #region
+        /// <summary>
+        /// 全频道广播消息
+        /// </summary>
+        /// <param name="message"></param>
+        public void BroadCastMessage(string msg)
+        {
+            try
+            {
+                ScsTextMessage message = new ScsTextMessage() { Text = msg };
+                foreach (var client in this.ScsServer.Clients.GetAllItems())
+                {
+                    try
+                    {
+                        if (client.CommunicationState == CommunicationStates.Connected) client.SendMessage(message);
+                    }
+                    catch (Exception e)
+                    {
+                        LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, "发送消息失败并且手动断开连接" + e.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "SendMessage"), "通讯报错");
+                        client.Disconnect();
+                    }
+                }
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "Broadcast message :" + message.Text, new LogUtility.RunningPlace("ServerClient", "SendMessage"), "SendMsg");
+            }
+            catch (Exception ex)
+            {
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, ex.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "SendMessage"), "通讯报错");
+            }
+        }
+        /// <summary>
+        /// 根据单位编号单独发送一条消息
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="UnitCode"></param>
+        public void BroadCastMessage(string msg, string UnitCode)
+        {
+            try
+            {
+                ScsTextMessage message = new ScsTextMessage() { Text = msg };
+                ServerClient sc = OnlineClents.Where(p => p.UnitCode == UnitCode).ToList().Count > 0 ? OnlineClents.Where(p => p.UnitCode == UnitCode).ToList()[0] : null;
+                if (sc == null) return;
+                foreach (var client in this.ScsServer.Clients.GetAllItems())
+                {
+                    try
+                    {
+                        if (client.CommunicationState == CommunicationStates.Connected && client.ClientId == sc.intClientID)
+                        {
+                            client.SendMessage(message);
+                            break;
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, "发送消息失败并且手动断开连接" + e.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "SendMessage"), "通讯报错");
+                        client.Disconnect();
+                    }
+                }
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "Broadcast message :" + message.Text, new LogUtility.RunningPlace("ServerClient", "SendMessage"), "SendMsg");
+            }
+            catch (Exception ex)
+            {
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, ex.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "SendMessage"), "通讯报错");
+            }
+        }
+
+        /// <summary>
+        /// 根据单位类型广播消息
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="type"></param>
+        public void BroadCastMessage(string msg, ClientType type)
+        {
+            try
+            {
+                ScsTextMessage message = new ScsTextMessage() { Text = msg };
+                ServerClient sc = OnlineClents.Where(p => p.UnitType == type).ToList().Count > 0 ? OnlineClents.Where(p => p.UnitType == type).ToList()[0] : null;
+                if (sc == null) return;
+                foreach (var client in this.ScsServer.Clients.GetAllItems())
+                {
+                    try
+                    {
+                        if (client.CommunicationState == CommunicationStates.Connected && client.ClientId == sc.intClientID) client.SendMessage(message);
+
+                    }
+                    catch (Exception e)
+                    {
+                        LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, "发送消息失败并且手动断开连接" + e.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "SendMessage"), "通讯报错");
+                        client.Disconnect();
+                    }
+                }
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "Broadcast message :" + message.Text, new LogUtility.RunningPlace("ServerClient", "SendMessage"), "SendMsg");
+            }
+            catch (Exception ex)
+            {
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, ex.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "SendMessage"), "通讯报错");
+            }
+        }
+        #endregion
     }
 
 }

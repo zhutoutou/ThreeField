@@ -187,3 +187,16 @@ D:\Code\Emergency\Emergency\Controller\bin\Debug\LOG.pdb
 D:\Code\ThreeField\ThreeField\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
 D:\Code\ThreeField\ThreeField\Controller\obj\Debug\Controller.dll
 D:\Code\ThreeField\ThreeField\Controller\obj\Debug\Controller.pdb
+D:\Code\ThreeField\ThreeField\Controller\bin\Debug\Controller.dll
+D:\Code\ThreeField\ThreeField\Controller\bin\Debug\Controller.pdb
+D:\Code\ThreeField\ThreeField\Controller\bin\Debug\LogUtility.dll
+D:\Code\ThreeField\ThreeField\Controller\bin\Debug\Model.dll
+D:\Code\ThreeField\ThreeField\Controller\bin\Debug\Utility.dll
+D:\Code\ThreeField\ThreeField\Controller\bin\Debug\ZIT.Comm.dll
+D:\Code\ThreeField\ThreeField\Controller\bin\Debug\LOG.dll
+D:\Code\ThreeField\ThreeField\Controller\bin\Debug\Newtonsoft.Json.dll
+D:\Code\ThreeField\ThreeField\Controller\bin\Debug\log4net.dll
+D:\Code\ThreeField\ThreeField\Controller\bin\Debug\ZIT.Comm.pdb
+D:\Code\ThreeField\ThreeField\Controller\bin\Debug\Model.pdb
+D:\Code\ThreeField\ThreeField\Controller\bin\Debug\Utility.pdb
+D:\Code\ThreeField\ThreeField\Controller\bin\Debug\LOG.pdb

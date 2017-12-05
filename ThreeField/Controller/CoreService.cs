@@ -1,7 +1,7 @@
 ﻿using System;
 using ZIT.ThreeField.Utility;
-using ZIT.ThreeField.Controller.BusinessServer;
-
+using ZIT.ThreeField.Model;
+using System.Collections.Generic;
 
 namespace ZIT.ThreeField.Controller
 {
@@ -16,20 +16,19 @@ namespace ZIT.ThreeField.Controller
         private static CoreService instance = null;
 
         /// <summary>
-        /// 与120业务服务器连接状态改变事件
+        /// 与TFServer连接客户端改变事件
         /// </summary>
-        public event EventHandler<StatusEventArgs> BServerConnectionStatusChanged;
+        public event EventHandler<UnitsEventArgs> ServerConnectedClientChanged;
+
         /// <summary>
-        /// 数据库连接状态变化事件
+        /// 返回三字段信息的委托
         /// </summary>
-        public event EventHandler<StatusEventArgs> DBLConnectStatusChanged;
+        public event TFReponseHandler TFReponseHandlerEvent;
+        public delegate void TFReponseHandler(tfReponse tfr);
 
 
-        public event EventHandler<StatusEventArgs> DBRConnectStatusChanged;
 
-        public GServer gs;
-
-
+        public TFServer ts;
 
         /// <summary>
         /// 获取当前类实例
@@ -49,10 +48,10 @@ namespace ZIT.ThreeField.Controller
         /// </summary>
         private CoreService()
         {
-            gs = new GServer();
-            gs.strRemoteIP = SysParameters.GServerIP;
-            gs.nLocalPort = SysParameters.GLocalPort;
+            ts = new TFServer();
+            ts.ServerPort = SysParameters.GLocalPort;
         }
+
 
         /// <summary>
         /// 开始数据交换服务
@@ -61,71 +60,56 @@ namespace ZIT.ThreeField.Controller
         {
             try
             {
-                //UDP连接120业务服务器
-                gs.ConnectionStatusChanged += BusnessServer_StatusChanged;
-                gs.Start();
+                //三字段服务器启动
+                ts.Start();
+                ts.ServerConnectedClientChanged += Ts_ServerConnectedClientChanged;
             }
             catch (Exception ex) { LogUtility.DataLog.WriteError(ex, "StartService"); }
 
-           
-            
         }
+
+       
+
+
 
         /// <summary>
         /// 停止数据交换服务
         /// </summary>
         public void StopService()
         {
-            gs.Stop();
+            ts.Stop();
         }
 
-        private void BusnessServer_StatusChanged(object sender, StatusEventArgs e)
+
+        private void Ts_ServerConnectedClientChanged(object sender, UnitsEventArgs e)
         {
-            OnBServerConnectionStatusChanged(e.Status);
-        }
-        private void DBLConnect_StatusChanged(object sender, StatusEventArgs e)
-        {
-            OnDBLConnectStatusChanged(e.Status);
+            OnServerConnectedClientChanged(e.Units);
         }
 
-        private void DBRConnect_StatusChanged(object sender, StatusEventArgs e)
+        protected virtual void OnServerConnectedClientChanged(List<OnlineUnit> units)
         {
-            OnDBRConnectStatusChanged(e.Status);
-        }
-        /// <summary>
-        /// Raises BServerConnectionStatusChanged event.
-        /// </summary>
-        /// <param name="message">Received message</param>
-        protected virtual void OnBServerConnectionStatusChanged(NetStatus status)
-        {
-            var handler = BServerConnectionStatusChanged;
+            var handler = ServerConnectedClientChanged;
             if (handler != null)
             {
-                handler(this, new StatusEventArgs(status));
+                handler(this, new UnitsEventArgs(units));
             }
         }
 
         /// <summary>
-        /// Raises DBConnectStatusChanged event.
+        /// 通知WCF信息反馈
         /// </summary>
-        /// <param name="message">Received message</param>
-        protected virtual void OnDBLConnectStatusChanged(NetStatus status)
+        /// <param name="tfr"></param>
+        public void OnTFReponseHandlerEvent(tfReponse tfr)
         {
-            var handler = DBLConnectStatusChanged;
+            var handler = TFReponseHandlerEvent;
             if (handler != null)
             {
-                handler(this, new StatusEventArgs(status));
+                handler(tfr);
             }
         }
 
-        protected virtual void OnDBRConnectStatusChanged(NetStatus status)
-        {
-            var handler = DBRConnectStatusChanged;
-            if (handler != null)
-            {
-                handler(this, new StatusEventArgs(status));
-            }
-        }
- 
+
+
+
     }
 }

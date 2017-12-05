@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Data.OracleClient;
 
 namespace ZIT.ThreeField.Model
 {
-    public class ParameterSql
+    public enum ClientType
     {
         /// <summary>
-        /// Sql语句
+        /// 未知类型
         /// </summary>
-        public string StrSql { get; set; }
+        UnKnow = 0,
         /// <summary>
-        /// 参数
+        /// 三字段服务器
         /// </summary>
-        public OracleParameter[] OrclPar { get; set; }
+        TF = 1,
     }
 }

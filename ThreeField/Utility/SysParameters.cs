@@ -12,7 +12,7 @@ namespace ZIT.ThreeField.Utility
         {
 
             DBType = "Oracle";
-
+            SharkHandsInterval = 5;
             GServerIP = ConfigurationManager.AppSettings["GServerIP"];
             GLocalPort = short.Parse(ConfigurationManager.AppSettings["GLocalPort"]);
             InsertInterval = short.Parse(ConfigurationManager.AppSettings["InsertInterval"]);
@@ -50,7 +50,10 @@ namespace ZIT.ThreeField.Utility
         /// 与120业务服务器连接的本地端口
         /// </summary>
         public static short GLocalPort;// = 2000;
-
+        /// <summary>
+        /// 检查握手断开
+        /// </summary>
+        public static int SharkHandsInterval;
         /// <summary>
         /// 数据库连接字符串
         /// </summary>

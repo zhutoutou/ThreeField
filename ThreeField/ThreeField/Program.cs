@@ -26,7 +26,7 @@ namespace ZIT.ThreeField.MainUI
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new MainUI());
+                Application.Run(new frmMain());
             }
             else
             {

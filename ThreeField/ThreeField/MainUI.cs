@@ -48,9 +48,7 @@ namespace ZIT.ThreeField.MainUI
         private void InitProgram()
         {
             CoreService control = CoreService.GetInstance();
-            control.BServerConnectionStatusChanged += BServer_ConnectionStatusChanged;
-            control.DBLConnectStatusChanged += DBL_ConnectionStatusChanged;
-            control.DBRConnectStatusChanged += DBR_ConnectionStatusChanged;
+            control. += BServer_ConnectionStatusChanged;
             control.StartService();
         }
 

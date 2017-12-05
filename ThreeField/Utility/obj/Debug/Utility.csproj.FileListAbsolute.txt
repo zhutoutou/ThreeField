@@ -53,3 +53,7 @@ D:\Code\Emergency\Emergency\Utility\obj\Debug\Utility.csprojResolveAssemblyRefer
 D:\Code\ThreeField\ThreeField\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
 D:\Code\ThreeField\ThreeField\Utility\obj\Debug\Utility.dll
 D:\Code\ThreeField\ThreeField\Utility\obj\Debug\Utility.pdb
+D:\Code\ThreeField\ThreeField\Utility\bin\Debug\Utility.dll
+D:\Code\ThreeField\ThreeField\Utility\bin\Debug\Utility.pdb
+D:\Code\ThreeField\ThreeField\Utility\bin\Debug\Model.dll
+D:\Code\ThreeField\ThreeField\Utility\bin\Debug\Model.pdb
