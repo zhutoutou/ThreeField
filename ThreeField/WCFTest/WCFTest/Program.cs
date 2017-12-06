@@ -21,7 +21,7 @@ namespace WCFTest
         {
             Thread th = new Thread(new ThreadStart(SendHandShake));
             th.Start();
-            tcpClient = ScsClientFactory.CreateClient(new ScsTcpEndPoint("192.168.1.3",2000 ));
+            tcpClient = ScsClientFactory.CreateClient(new ScsTcpEndPoint("192.168.10.192",2000 ));
             ClientReConnecter crc = new ClientReConnecter(tcpClient);
             tcpClient.Disconnected += new EventHandler(ExchangeServer_Disconnected);
             tcpClient.Connected += new EventHandler(ExchangeServer_Connected);

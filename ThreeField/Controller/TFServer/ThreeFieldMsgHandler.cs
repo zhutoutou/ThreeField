@@ -78,9 +78,9 @@ namespace ZIT.ThreeField.Controller
             try
             {
                 tfReponse tfr = new tfReponse();
-                tfr.Zjhm = GetValueByKey(msg, "ZJHM");
-                tfr.Dz = GetValueByKey(msg, "DZ");
-                tfr.Hz = GetValueByKey(msg, "HZ");
+                tfr.Tfinfo.Zjhm = GetValueByKey(msg, "ZJHM");
+                tfr.Tfinfo.Dz = GetValueByKey(msg, "DZ");
+                tfr.Tfinfo.Hz = GetValueByKey(msg, "HZ");
                 LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "三字段服务器登陆", new LogUtility.RunningPlace("ThreeFieldMsgHandler", "Handle8000Message"), "软件业务处理");
                 CoreService.GetInstance().OnTFReponseHandlerEvent(tfr);
             }

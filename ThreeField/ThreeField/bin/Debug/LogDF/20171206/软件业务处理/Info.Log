@@ -1,0 +1,550 @@
+﻿日志时间:2017-12-06 10:48:21
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆，IP：192.168.10.192，Port：60310
+
+日志时间:2017-12-06 10:51:09
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：15251817271
+
+日志时间:2017-12-06 10:51:12
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 10:51:13
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：15251817271
+
+日志时间:2017-12-06 10:51:13
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset反馈请求，主叫号码：15251817271,Reponse:{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"15251817271"}
+
+日志时间:2017-12-06 10:54:42
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：15251817271
+
+日志时间:2017-12-06 10:54:45
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset反馈请求，主叫号码：15251817271,Reponse:{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"15251817271"}
+
+日志时间:2017-12-06 10:54:45
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 10:54:47
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：15251817271
+
+日志时间:2017-12-06 10:54:59
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：15
+
+日志时间:2017-12-06 10:54:59
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset反馈请求，主叫号码：15,Reponse:{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"15251817271"}
+
+日志时间:2017-12-06 10:54:59
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 10:54:59
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：15
+
+日志时间:2017-12-06 10:55:07
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：15
+
+日志时间:2017-12-06 10:55:07
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 10:55:07
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset反馈请求，主叫号码：15,Reponse:{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"15"}
+
+日志时间:2017-12-06 10:55:07
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：15
+
+日志时间:2017-12-06 10:55:13
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：152
+
+日志时间:2017-12-06 10:55:13
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 10:55:13
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset反馈请求，主叫号码：152,Reponse:{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"15"}
+
+日志时间:2017-12-06 10:55:13
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：152
+
+日志时间:2017-12-06 10:55:56
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：153
+
+日志时间:2017-12-06 10:55:59
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 10:55:59
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset反馈请求，主叫号码：153,Reponse:{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"152"}
+
+日志时间:2017-12-06 10:55:59
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：153
+
+日志时间:2017-12-06 10:56:40
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：153
+
+日志时间:2017-12-06 10:57:12
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆，IP：192.168.10.192，Port：60715
+
+日志时间:2017-12-06 10:57:36
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：152
+
+日志时间:2017-12-06 10:57:36
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 10:57:36
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：152
+
+日志时间:2017-12-06 10:57:38
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset反馈请求，主叫号码：152,Reponse:{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"152"}
+
+日志时间:2017-12-06 10:57:46
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：153
+
+日志时间:2017-12-06 10:57:46
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 10:57:46
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：153
+
+日志时间:2017-12-06 10:57:46
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset反馈请求，主叫号码：153,Reponse:{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"153"}
+
+日志时间:2017-12-06 10:57:52
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：154
+
+日志时间:2017-12-06 10:57:52
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 10:57:52
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：154
+
+日志时间:2017-12-06 10:57:52
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset反馈请求，主叫号码：154,Reponse:{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"154"}
+
+日志时间:2017-12-06 16:37:37
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆，IP：192.168.10.192，Port：58696
+
+日志时间:2017-12-06 16:38:59
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：15251518187271
+
+日志时间:2017-12-06 16:39:04
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset超时反馈请求，主叫号码：15251518187271,Reponse:{"ErrMsg":"WCF_TFReuset反馈请求超时","Result":false,"Tfinfo":{"Dz":null,"Hz":null,"Zjhm":null}}
+
+日志时间:2017-12-06 16:39:13
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆，IP：192.168.10.192，Port：58760
+
+日志时间:2017-12-06 16:39:26
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：15251518187271
+
+日志时间:2017-12-06 16:39:32
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset超时反馈请求，主叫号码：15251518187271,Reponse:{"ErrMsg":"WCF_TFReuset反馈请求超时","Result":false,"Tfinfo":{"Dz":null,"Hz":null,"Zjhm":null}}
+
+日志时间:2017-12-06 16:40:49
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：15251518187271
+
+日志时间:2017-12-06 16:40:49
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset三字段服务器没有连接上，主叫号码：15251518187271
+
+日志时间:2017-12-06 16:41:30
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆，IP：192.168.10.192，Port：58836
+
+日志时间:2017-12-06 16:41:32
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：15251518187271
+
+日志时间:2017-12-06 16:41:54
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset超时反馈请求，主叫号码：15251518187271,Reponse:{"ErrMsg":"WCF_TFReuset反馈请求超时","Result":false,"Tfinfo":{"Dz":null,"Hz":null,"Zjhm":null}}
+
+日志时间:2017-12-06 16:41:55
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆，IP：192.168.10.192，Port：58847
+
+日志时间:2017-12-06 16:42:57
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：15251518187271
+
+日志时间:2017-12-06 16:43:36
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset超时反馈请求，主叫号码：15251518187271,Reponse:{"ErrMsg":"WCF_TFReuset反馈请求超时","Result":false,"Tfinfo":{"Dz":null,"Hz":null,"Zjhm":null}}
+
+日志时间:2017-12-06 16:43:57
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆，IP：192.168.10.192，Port：58892
+
+日志时间:2017-12-06 16:44:01
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：15251518187271
+
+日志时间:2017-12-06 16:44:01
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 16:44:01
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：15251518187271
+
+日志时间:2017-12-06 16:44:01
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset正常反馈请求，主叫号码：15251518187271,Reponse:{"ErrMsg":null,"Result":true,"Tfinfo":{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"15251518187271"}}
+
+日志时间:2017-12-06 16:46:28
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：1525151818
+
+日志时间:2017-12-06 16:46:28
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 16:46:28
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：1525151818
+
+日志时间:2017-12-06 16:46:28
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset正常反馈请求，主叫号码：1525151818,Reponse:{"ErrMsg":null,"Result":true,"Tfinfo":{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"1525151818"}}
+
+日志时间:2017-12-06 16:46:41
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：1525151
+
+日志时间:2017-12-06 16:46:42
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 16:46:42
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：1525151
+
+日志时间:2017-12-06 16:46:42
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset正常反馈请求，主叫号码：1525151,Reponse:{"ErrMsg":null,"Result":true,"Tfinfo":{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"1525151"}}
+
+日志时间:2017-12-06 16:47:20
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：152515155
+
+日志时间:2017-12-06 16:47:20
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 16:47:21
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：152515155
+
+日志时间:2017-12-06 16:47:21
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset正常反馈请求，主叫号码：152515155,Reponse:{"ErrMsg":null,"Result":true,"Tfinfo":{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"152515155"}}
+
+日志时间:2017-12-06 16:56:02
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆，IP：192.168.10.192，Port：59279
+
+日志时间:2017-12-06 16:56:37
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：151
+
+日志时间:2017-12-06 16:56:38
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 16:56:38
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：151
+
+日志时间:2017-12-06 16:56:38
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset正常反馈请求，主叫号码：151,Reponse:{"ErrMsg":null,"Result":true,"Tfinfo":{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"151"}}
+
+日志时间:2017-12-06 16:58:27
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆，IP：192.168.10.192，Port：59358
+
+日志时间:2017-12-06 16:58:51
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆，IP：192.168.10.192，Port：59369
+
+日志时间:2017-12-06 16:59:39
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：152
+
+日志时间:2017-12-06 16:59:39
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 16:59:39
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：152
+
+日志时间:2017-12-06 16:59:39
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset正常反馈请求，主叫号码：152,Reponse:{"ErrMsg":null,"Result":true,"Tfinfo":{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"152"}}
+
+日志时间:2017-12-06 16:59:42
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：152
+
+日志时间:2017-12-06 16:59:42
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 16:59:42
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：152
+
+日志时间:2017-12-06 16:59:42
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset正常反馈请求，主叫号码：152,Reponse:{"ErrMsg":null,"Result":true,"Tfinfo":{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"152"}}
+
+日志时间:2017-12-06 17:00:47
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：152
+
+日志时间:2017-12-06 17:00:47
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 17:00:47
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：152
+
+日志时间:2017-12-06 17:00:47
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset正常反馈请求，主叫号码：152,Reponse:{"ErrMsg":null,"Result":true,"Tfinfo":{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"152"}}
+
+日志时间:2017-12-06 17:00:54
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：153
+
+日志时间:2017-12-06 17:00:54
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 17:00:54
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：153
+
+日志时间:2017-12-06 17:00:54
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset正常反馈请求，主叫号码：153,Reponse:{"ErrMsg":null,"Result":true,"Tfinfo":{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"153"}}
+
+日志时间:2017-12-06 17:01:23
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：151
+
+日志时间:2017-12-06 17:01:23
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 17:01:23
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：151
+
+日志时间:2017-12-06 17:01:23
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset正常反馈请求，主叫号码：151,Reponse:{"ErrMsg":null,"Result":true,"Tfinfo":{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"151"}}
+
+日志时间:2017-12-06 17:01:36
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：152
+
+日志时间:2017-12-06 17:01:36
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 17:01:36
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：152
+
+日志时间:2017-12-06 17:01:36
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset正常反馈请求，主叫号码：152,Reponse:{"ErrMsg":null,"Result":true,"Tfinfo":{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"152"}}
+
+日志时间:2017-12-06 17:01:44
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：152
+
+日志时间:2017-12-06 17:01:44
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 17:01:44
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：152
+
+日志时间:2017-12-06 17:01:44
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset正常反馈请求，主叫号码：152,Reponse:{"ErrMsg":null,"Result":true,"Tfinfo":{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"152"}}
+
+日志时间:2017-12-06 17:01:50
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset收到请求，主叫号码：156
+
+日志时间:2017-12-06 17:01:50
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆
+
+日志时间:2017-12-06 17:01:50
+日志级别:Info
+日志位置:类[Control_TFReponseHandlerEvent],方法[TFReuset]
+日志内容:WCF_TFReuset结束TCP反馈，主叫号码：156
+
+日志时间:2017-12-06 17:01:50
+日志级别:Info
+日志位置:类[ThreeFieldWCF],方法[TFReuset]
+日志内容:WCF_TFReuset正常反馈请求，主叫号码：156,Reponse:{"ErrMsg":null,"Result":true,"Tfinfo":{"Dz":"郁金香路17号","Hz":"张三","Zjhm":"156"}}
+
+日志时间:2017-12-06 17:16:25
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Handle8000Message]
+日志内容:三字段服务器登陆，IP：192.168.10.192，Port：59924
+

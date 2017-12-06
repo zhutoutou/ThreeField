@@ -8,14 +8,11 @@ D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\LogUtility.dll
 D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\Model.dll
 D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\ZIT.Comm.dll
 D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\Utility.dll
-D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\LOG.dll
 D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\Newtonsoft.Json.dll
-D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\log4net.dll
 D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\Controller.pdb
 D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\Model.pdb
 D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\ZIT.Comm.pdb
 D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\Utility.pdb
-D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\LOG.pdb
 D:\Code\ThreeField\ThreeField\ThreeField\obj\Debug\ZIT.ThreeField.MainUI.frmMain.resources
 D:\Code\ThreeField\ThreeField\ThreeField\obj\Debug\ZIT.ThreeField.frmMain.Properties.Resources.resources
 D:\Code\ThreeField\ThreeField\ThreeField\obj\Debug\ThreeField.exe
@@ -44,3 +41,7 @@ F:\Work Space\ThreeField\ThreeField\ThreeField\bin\Debug\ThreeField.exe.config
 F:\Work Space\ThreeField\ThreeField\ThreeField\bin\Debug\TFWCF.dll
 F:\Work Space\ThreeField\ThreeField\ThreeField\bin\Debug\TFWCF.pdb
 F:\Work Space\ThreeField\ThreeField\ThreeField\bin\Debug\TFWCF.dll.config
+D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\ThreeField.exe.config
+D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\TFWCF.dll
+D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\TFWCF.pdb
+D:\Code\ThreeField\ThreeField\ThreeField\bin\Debug\TFWCF.dll.config

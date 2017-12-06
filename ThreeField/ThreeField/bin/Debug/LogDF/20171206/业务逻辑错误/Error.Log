@@ -1,0 +1,5 @@
+﻿异常时间:2017-12-06 16:43:31
+异常级别:Error
+异常位置:类[TFServer],方法[CheckConnectedStatus_Thread]
+异常内容:集合已修改；可能无法执行枚举操作。
+

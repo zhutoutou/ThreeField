@@ -193,13 +193,10 @@ D:\Code\ThreeField\ThreeField\Controller\bin\Debug\LogUtility.dll
 D:\Code\ThreeField\ThreeField\Controller\bin\Debug\Model.dll
 D:\Code\ThreeField\ThreeField\Controller\bin\Debug\Utility.dll
 D:\Code\ThreeField\ThreeField\Controller\bin\Debug\ZIT.Comm.dll
-D:\Code\ThreeField\ThreeField\Controller\bin\Debug\LOG.dll
 D:\Code\ThreeField\ThreeField\Controller\bin\Debug\Newtonsoft.Json.dll
-D:\Code\ThreeField\ThreeField\Controller\bin\Debug\log4net.dll
 D:\Code\ThreeField\ThreeField\Controller\bin\Debug\ZIT.Comm.pdb
 D:\Code\ThreeField\ThreeField\Controller\bin\Debug\Model.pdb
 D:\Code\ThreeField\ThreeField\Controller\bin\Debug\Utility.pdb
-D:\Code\ThreeField\ThreeField\Controller\bin\Debug\LOG.pdb
 F:\Work Space\ThreeField\ThreeField\Controller\bin\Debug\Controller.dll
 F:\Work Space\ThreeField\ThreeField\Controller\bin\Debug\Controller.pdb
 F:\Work Space\ThreeField\ThreeField\Controller\bin\Debug\LogUtility.dll

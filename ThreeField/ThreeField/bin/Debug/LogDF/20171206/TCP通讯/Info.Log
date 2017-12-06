@@ -1,0 +1,10 @@
+﻿日志时间:2017-12-06 16:43:31
+日志级别:Info
+日志位置:类[TFServer],方法[CheckConnectedStatus_Thread]
+日志内容:根据握手超时,手动断开通讯不正常的客户端连接,IP:192.168.10.192Port:58847
+
+日志时间:2017-12-06 17:02:11
+日志级别:Info
+日志位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+日志内容:Restart DoListenAsThread
+
