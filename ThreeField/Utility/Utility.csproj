@@ -53,10 +53,6 @@
     <Compile Include="XMLHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LOG\LOG.csproj">
-      <Project>{81326d76-ffd1-4637-ba8c-4cd73a75f196}</Project>
-      <Name>LOG</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{823e8728-7f58-4fcf-b3ac-33d86b2fabba}</Project>
       <Name>Model</Name>

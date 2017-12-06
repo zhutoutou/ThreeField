@@ -17,3 +17,20 @@ D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\Controller.pdb
 D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\ZIT.Comm.pdb
 D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\Utility.pdb
 D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\LOG.pdb
+F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\TFWCF.dll.config
+F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\TFWCF.dll
+F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\TFWCF.pdb
+F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\Controller.dll
+F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\Model.dll
+F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\ZIT.Comm.dll
+F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\Utility.dll
+F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\LogUtility.dll
+F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\Newtonsoft.Json.dll
+F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\Controller.pdb
+F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\Model.pdb
+F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\ZIT.Comm.pdb
+F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\Utility.pdb
+F:\Work Space\ThreeField\ThreeField\TFWCF\obj\Debug\TFWCF.csprojResolveAssemblyReference.cache
+F:\Work Space\ThreeField\ThreeField\TFWCF\obj\Debug\TFWCF.csproj.CoreCompileInputs.cache
+F:\Work Space\ThreeField\ThreeField\TFWCF\obj\Debug\TFWCF.dll
+F:\Work Space\ThreeField\ThreeField\TFWCF\obj\Debug\TFWCF.pdb

@@ -10,12 +10,18 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using ZIT.ThreeField.Controller;
-
+using System.ServiceModel;
+using ZIT.ThreeField.TFWCF;
 
 namespace ZIT.ThreeField.MainUI
 {
     public partial class frmMain : Form
     {
+        /// <summary>
+        /// 将WCF发布在本机上
+        /// </summary>
+        public ServiceHost host;
+
         public frmMain()
         {
             InitializeComponent();
@@ -29,6 +35,10 @@ namespace ZIT.ThreeField.MainUI
             CoreService control = CoreService.GetInstance();
             control.ServerConnectedClientChanged += Server_ConnectedClientChanged;
             control.StartService();
+
+            //本机发布WCF服务
+            host = new ServiceHost(typeof(ThreeFieldWCF));
+            host.Open();
         }
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)

@@ -57,3 +57,12 @@ D:\Code\ThreeField\ThreeField\Utility\bin\Debug\Utility.dll
 D:\Code\ThreeField\ThreeField\Utility\bin\Debug\Utility.pdb
 D:\Code\ThreeField\ThreeField\Utility\bin\Debug\Model.dll
 D:\Code\ThreeField\ThreeField\Utility\bin\Debug\Model.pdb
+F:\Work Space\ThreeField\ThreeField\Utility\bin\Debug\Utility.dll
+F:\Work Space\ThreeField\ThreeField\Utility\bin\Debug\Utility.pdb
+F:\Work Space\ThreeField\ThreeField\Utility\bin\Debug\Model.dll
+F:\Work Space\ThreeField\ThreeField\Utility\bin\Debug\Newtonsoft.Json.dll
+F:\Work Space\ThreeField\ThreeField\Utility\bin\Debug\Model.pdb
+F:\Work Space\ThreeField\ThreeField\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+F:\Work Space\ThreeField\ThreeField\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+F:\Work Space\ThreeField\ThreeField\Utility\obj\Debug\Utility.dll
+F:\Work Space\ThreeField\ThreeField\Utility\obj\Debug\Utility.pdb

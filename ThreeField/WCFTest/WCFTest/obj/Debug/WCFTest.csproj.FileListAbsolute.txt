@@ -1,0 +1,9 @@
+F:\Work Space\C#\WCFTest\WCFTest\obj\Debug\WCFTest.csprojResolveAssemblyReference.cache
+F:\Work Space\C#\WCFTest\WCFTest\obj\Debug\WCFTest.csproj.CoreCompileInputs.cache
+F:\Work Space\C#\WCFTest\WCFTest\bin\Debug\WCFTest.exe.config
+F:\Work Space\C#\WCFTest\WCFTest\bin\Debug\WCFTest.exe
+F:\Work Space\C#\WCFTest\WCFTest\bin\Debug\WCFTest.pdb
+F:\Work Space\C#\WCFTest\WCFTest\bin\Debug\ZIT.Comm.dll
+F:\Work Space\C#\WCFTest\WCFTest\bin\Debug\ZIT.Comm.pdb
+F:\Work Space\C#\WCFTest\WCFTest\obj\Debug\WCFTest.exe
+F:\Work Space\C#\WCFTest\WCFTest\obj\Debug\WCFTest.pdb

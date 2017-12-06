@@ -1,0 +1,35 @@
+﻿异常时间:2017-12-05 22:06:54
+异常级别:Error
+异常位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+异常内容:一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+
+异常时间:2017-12-05 22:10:12
+异常级别:Error
+异常位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+异常内容:一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+
+异常时间:2017-12-05 22:11:41
+异常级别:Error
+异常位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+异常内容:一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+
+异常时间:2017-12-05 22:12:08
+异常级别:Error
+异常位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+异常内容:一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+
+异常时间:2017-12-05 22:14:44
+异常级别:Error
+异常位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+异常内容:一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+
+异常时间:2017-12-05 23:07:23
+异常级别:Error
+异常位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+异常内容:一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+
+异常时间:2017-12-05 23:14:58
+异常级别:Error
+异常位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+异常内容:一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+

@@ -2,6 +2,7 @@
 using ZIT.ThreeField.Utility;
 using ZIT.ThreeField.Model;
 using System.Collections.Generic;
+using System.ServiceModel;
 
 namespace ZIT.ThreeField.Controller
 {
@@ -49,7 +50,7 @@ namespace ZIT.ThreeField.Controller
         private CoreService()
         {
             ts = new TFServer();
-            ts.ServerPort = SysParameters.GLocalPort;
+            ts.ServerPort = SysParameters.LocalPort;
         }
 
 

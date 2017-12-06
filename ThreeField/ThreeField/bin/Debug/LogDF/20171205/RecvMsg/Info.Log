@@ -1,0 +1,25 @@
+﻿日志时间:2017-12-05 23:06:31
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Message_Handler]
+日志内容:Recieved message Unitcode is 001 Port is 2000:[2051ZJHM:15251*#DZ:郁金香路17号*#HZ:张三*#]
+
+日志时间:2017-12-05 23:09:21
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Message_Handler]
+日志内容:Recieved message Unitcode is 001 Port is 2000:[2051ZJHM:152515*#DZ:郁金香路17号*#HZ:张三*#]
+
+日志时间:2017-12-05 23:09:56
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Message_Handler]
+日志内容:Recieved message Unitcode is 001 Port is 2000:[2051ZJHM:152515*#DZ:郁金香路17号*#HZ:张三*#]
+
+日志时间:2017-12-05 23:11:29
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Message_Handler]
+日志内容:Recieved message Unitcode is 001 Port is 2000:[2051ZJHM:152515*#DZ:郁金香路17号*#HZ:张三*#]
+
+日志时间:2017-12-05 23:11:37
+日志级别:Info
+日志位置:类[ThreeFieldMsgHandler],方法[Message_Handler]
+日志内容:Recieved message Unitcode is 001 Port is 2000:[2051ZJHM:152515*#DZ:郁金香路17号*#HZ:张三*#]
+

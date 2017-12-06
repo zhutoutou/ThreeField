@@ -1,0 +1,80 @@
+﻿日志时间:2017-12-05 22:06:54
+日志级别:Info
+日志位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+日志内容:Restart DoListenAsThread
+
+日志时间:2017-12-05 22:10:12
+日志级别:Info
+日志位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+日志内容:Restart DoListenAsThread
+
+日志时间:2017-12-05 22:11:41
+日志级别:Info
+日志位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+日志内容:Restart DoListenAsThread
+
+日志时间:2017-12-05 22:12:08
+日志级别:Info
+日志位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+日志内容:Restart DoListenAsThread
+
+日志时间:2017-12-05 22:14:44
+日志级别:Info
+日志位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+日志内容:Restart DoListenAsThread
+
+日志时间:2017-12-05 22:54:20
+日志级别:Info
+日志位置:类[TFServer],方法[CheckConnectedStatus_Thread]
+日志内容:根据握手超时,手动断开通讯不正常的客户端连接,IP:192.168.1.3Port:54721
+
+日志时间:2017-12-05 22:54:40
+日志级别:Info
+日志位置:类[TFServer],方法[CheckConnectedStatus_Thread]
+日志内容:根据握手超时,手动断开通讯不正常的客户端连接,IP:192.168.1.3Port:54738
+
+日志时间:2017-12-05 22:55:30
+日志级别:Info
+日志位置:类[TFServer],方法[CheckConnectedStatus_Thread]
+日志内容:根据握手超时,手动断开通讯不正常的客户端连接,IP:192.168.1.3Port:54756
+
+日志时间:2017-12-05 22:56:25
+日志级别:Info
+日志位置:类[TFServer],方法[CheckConnectedStatus_Thread]
+日志内容:根据握手超时,手动断开通讯不正常的客户端连接,IP:192.168.1.3Port:54783
+
+日志时间:2017-12-05 22:56:45
+日志级别:Info
+日志位置:类[TFServer],方法[CheckConnectedStatus_Thread]
+日志内容:根据握手超时,手动断开通讯不正常的客户端连接,IP:192.168.1.3Port:54796
+
+日志时间:2017-12-05 22:57:33
+日志级别:Info
+日志位置:类[TFServer],方法[CheckConnectedStatus_Thread]
+日志内容:根据握手超时,手动断开通讯不正常的客户端连接,IP:192.168.1.3Port:54823
+
+日志时间:2017-12-05 22:57:56
+日志级别:Info
+日志位置:类[TFServer],方法[CheckConnectedStatus_Thread]
+日志内容:根据握手超时,手动断开通讯不正常的客户端连接,IP:192.168.1.3Port:54836
+
+日志时间:2017-12-05 23:06:31
+日志级别:Info
+日志位置:类[TFServer],方法[CheckConnectedStatus_Thread]
+日志内容:根据握手超时,手动断开通讯不正常的客户端连接,IP:192.168.1.3Port:54895
+
+日志时间:2017-12-05 23:07:23
+日志级别:Info
+日志位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+日志内容:Restart DoListenAsThread
+
+日志时间:2017-12-05 23:14:55
+日志级别:Info
+日志位置:类[TFServer],方法[CheckConnectedStatus_Thread]
+日志内容:根据握手超时,手动断开通讯不正常的客户端连接,IP:192.168.1.3Port:55346
+
+日志时间:2017-12-05 23:14:58
+日志级别:Info
+日志位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+日志内容:Restart DoListenAsThread
+

@@ -255,15 +255,15 @@ namespace ZIT.ThreeField.Controller
                     }
                     catch (Exception e)
                     {
-                        LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, "发送消息失败并且手动断开连接" + e.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "SendMessage"), "通讯报错");
+                        LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, "发送消息失败并且手动断开连接" + e.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "BroadCastMessage"), "通讯报错");
                         client.Disconnect();
                     }
                 }
-                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "Broadcast message :" + message.Text, new LogUtility.RunningPlace("ServerClient", "SendMessage"), "SendMsg");
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "Broadcast message :" + message.Text, new LogUtility.RunningPlace("ServerClient", "BroadCastMessage"), "SendMsg");
             }
             catch (Exception ex)
             {
-                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, ex.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "SendMessage"), "通讯报错");
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, ex.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "BroadCastMessage"), "通讯报错");
             }
         }
         /// <summary>
@@ -290,11 +290,11 @@ namespace ZIT.ThreeField.Controller
                     }
                     catch (Exception e)
                     {
-                        LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, "发送消息失败并且手动断开连接" + e.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "SendMessage"), "通讯报错");
+                        LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, "发送消息失败并且手动断开连接" + e.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "BroadCastMessage"), "通讯报错");
                         client.Disconnect();
                     }
                 }
-                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "Broadcast message :" + message.Text, new LogUtility.RunningPlace("ServerClient", "SendMessage"), "SendMsg");
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "Broadcast message :" + message.Text, new LogUtility.RunningPlace("ServerClient", "BroadCastMessage"), "SendMsg");
             }
             catch (Exception ex)
             {
@@ -323,15 +323,15 @@ namespace ZIT.ThreeField.Controller
                     }
                     catch (Exception e)
                     {
-                        LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, "发送消息失败并且手动断开连接" + e.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "SendMessage"), "通讯报错");
+                        LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, "发送消息失败并且手动断开连接" + e.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "BroadCastMessage"), "通讯报错");
                         client.Disconnect();
                     }
                 }
-                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "Broadcast message :" + message.Text, new LogUtility.RunningPlace("ServerClient", "SendMessage"), "SendMsg");
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "Broadcast message :" + message.Text, new LogUtility.RunningPlace("ServerClient", "BroadCastMessage"), "SendMsg");
             }
             catch (Exception ex)
             {
-                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, ex.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "SendMessage"), "通讯报错");
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, ex.Message.ToString(), new LogUtility.RunningPlace("ServerClient", "BroadCastMessage"), "通讯报错");
             }
         }
         #endregion

@@ -200,3 +200,17 @@ D:\Code\ThreeField\ThreeField\Controller\bin\Debug\ZIT.Comm.pdb
 D:\Code\ThreeField\ThreeField\Controller\bin\Debug\Model.pdb
 D:\Code\ThreeField\ThreeField\Controller\bin\Debug\Utility.pdb
 D:\Code\ThreeField\ThreeField\Controller\bin\Debug\LOG.pdb
+F:\Work Space\ThreeField\ThreeField\Controller\bin\Debug\Controller.dll
+F:\Work Space\ThreeField\ThreeField\Controller\bin\Debug\Controller.pdb
+F:\Work Space\ThreeField\ThreeField\Controller\bin\Debug\LogUtility.dll
+F:\Work Space\ThreeField\ThreeField\Controller\bin\Debug\Model.dll
+F:\Work Space\ThreeField\ThreeField\Controller\bin\Debug\Utility.dll
+F:\Work Space\ThreeField\ThreeField\Controller\bin\Debug\ZIT.Comm.dll
+F:\Work Space\ThreeField\ThreeField\Controller\bin\Debug\Newtonsoft.Json.dll
+F:\Work Space\ThreeField\ThreeField\Controller\bin\Debug\ZIT.Comm.pdb
+F:\Work Space\ThreeField\ThreeField\Controller\bin\Debug\Model.pdb
+F:\Work Space\ThreeField\ThreeField\Controller\bin\Debug\Utility.pdb
+F:\Work Space\ThreeField\ThreeField\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+F:\Work Space\ThreeField\ThreeField\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
+F:\Work Space\ThreeField\ThreeField\Controller\obj\Debug\Controller.dll
+F:\Work Space\ThreeField\ThreeField\Controller\obj\Debug\Controller.pdb

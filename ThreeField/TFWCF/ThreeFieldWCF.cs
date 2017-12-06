@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading;
 using ZIT.ThreeField.Model;
 using ZIT.ThreeField.Controller;
+using ZIT.ThreeField.Utility;
+using ZIT.ThreeField.Utils;
 
 namespace ZIT.ThreeField.TFWCF
 {
@@ -14,29 +16,45 @@ namespace ZIT.ThreeField.TFWCF
     public class ThreeFieldWCF : IThreeFieldWCF
     {
 
-        public static Mutex Mutex = new Mutex();
+        SynchronizationContext syncContext_TFRequest;
 
         public CoreService control = CoreService.GetInstance();
 
         public tfReponse Tfr = null;
-        public tfReponse TFReuset(string ZJHM)
+        public string TFRequset(string ZJHM)
         {
-            //RaiseTFRequest(ZJHM);
-            if (control.ts != null && control.ts.OnlineClents.Count > 0)
+            try
             {
-                control.TFReponseHandlerEvent += Control_TFReponseHandlerEvent;
-                control.ts.BroadCastMessage(BuildTFRequestFromModel(ZJHM), ClientType.TF);
-                Mutex.WaitOne();
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "WCF_TFReuset收到请求，主叫号码：" + ZJHM, new LogUtility.RunningPlace("ThreeFieldWCF", "TFReuset"), "软件业务处理");
+                //RaiseTFRequest(ZJHM);
+                if (control.ts != null && control.ts.OnlineClents.Count > 0)
+                {
+                    control.TFReponseHandlerEvent += Control_TFReponseHandlerEvent;
+                    control.ts.BroadCastMessage(BuildTFRequestFromModel(ZJHM), ClientType.TF);
+                    syncContext_TFRequest = SynchronizationContext.Current;
+                }
+                if (Tfr is null) return "";
+                string reponse = JSON.ObjectToJson(Tfr);
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "WCF_TFReuset反馈请求，主叫号码：" + ZJHM + ",Reponse:" + reponse, new LogUtility.RunningPlace("ThreeFieldWCF", "TFReuset"), "软件业务处理");
+                return reponse;
             }
-            return Tfr;
-
+            catch (Exception ex)
+            {
+                return "";
+            }
         }
 
         private void Control_TFReponseHandlerEvent(tfReponse tfr)
         {
-            Tfr = tfr;
-            control.TFReponseHandlerEvent -= Control_TFReponseHandlerEvent;
-            Mutex.ReleaseMutex();
+            try
+            {
+                LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "WCF_TFReuset结束TCP反馈，主叫号码：" + tfr.Zjhm, new LogUtility.RunningPlace("Control_TFReponseHandlerEvent", "TFReuset"), "软件业务处理");
+                Tfr = tfr;
+                control.TFReponseHandlerEvent -= Control_TFReponseHandlerEvent;
+                syncContext_TFRequest.Post()
+            }
+            catch (Exception ex)
+            { }
         }
 
 

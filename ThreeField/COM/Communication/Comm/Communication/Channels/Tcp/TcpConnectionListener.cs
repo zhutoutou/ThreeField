@@ -104,9 +104,9 @@ namespace ZIT.Communication.Comm.Communication.Channels.Tcp
                 {
                     if (socketException.ErrorCode != 10054)
                     {
-                        LOG.LogHelper.WriteLog("socketException", socketException);
+                        LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error, socketException.Message, new LogUtility.RunningPlace("DoListenAsThread_socketException", "TcpConnectionListener"), "通讯报错");
                         OnConnectionListenerCrushed();
-                        LOG.LogHelper.WriteNetMsgLog("Restart DoListenAsThread");
+                        LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "Restart DoListenAsThread", new LogUtility.RunningPlace("DoListenAsThread_socketException", "TcpConnectionListener"), "TCP通讯");
                         //Disconnect, wait for a while and connect again.
                         StopSocket();
                         Thread.Sleep(1000);
@@ -126,9 +126,9 @@ namespace ZIT.Communication.Comm.Communication.Channels.Tcp
                 }
                 catch (Exception ex)
                 {
-                    LOG.LogHelper.WriteLog("Exception", ex);
+                    LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Error,ex.Message,new LogUtility.RunningPlace("DoListenAsThread_Exception", "TcpConnectionListener"), "通讯报错");
                     OnConnectionListenerCrushed();
-                    LOG.LogHelper.WriteNetMsgLog("Restart DoListenAsThread");
+                    LogUtility.DataLog.WriteLog(LogUtility.LogLevel.Info, "Restart DoListenAsThread", new LogUtility.RunningPlace("DoListenAsThread_Exception", "TcpConnectionListener"), "TCP通讯");
                     //Disconnect, wait for a while and connect again.
                     StopSocket();
                     Thread.Sleep(1000);
