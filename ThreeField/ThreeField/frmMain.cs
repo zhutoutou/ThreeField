@@ -117,9 +117,9 @@ namespace ZIT.ThreeField.MainUI
             c1.Width = 120;
 
             DataGridViewTextBoxColumn c2 = new DataGridViewTextBoxColumn();
-            c2.Name = "UnitType";
+            c2.Name = "UnitName";
             c2.HeaderText = "单位类型";
-            c2.DataPropertyName = "UnitType";
+            c2.DataPropertyName = "UnitName";
             c2.Width = 190;
 
             DataGridViewTextBoxColumn c3 = new DataGridViewTextBoxColumn();

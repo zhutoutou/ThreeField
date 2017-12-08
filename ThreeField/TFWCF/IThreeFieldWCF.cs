@@ -13,6 +13,6 @@ namespace ZIT.ThreeField.TFWCF
     public interface IThreeFieldWCF
     {
         [OperationContract]
-        string TFRequset(string ZJHM);
+        string TFRequset(string request);
     }
 }

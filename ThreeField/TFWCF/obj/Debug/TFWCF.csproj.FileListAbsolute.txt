@@ -10,13 +10,10 @@ D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\Controller.dll
 D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\ZIT.Comm.dll
 D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\Utility.dll
 D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\LogUtility.dll
-D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\LOG.dll
 D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\Newtonsoft.Json.dll
-D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\log4net.dll
 D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\Controller.pdb
 D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\ZIT.Comm.pdb
 D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\Utility.pdb
-D:\Code\ThreeField\ThreeField\TFWCF\bin\Debug\LOG.pdb
 F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\TFWCF.dll.config
 F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\TFWCF.dll
 F:\Work Space\ThreeField\ThreeField\TFWCF\bin\Debug\TFWCF.pdb

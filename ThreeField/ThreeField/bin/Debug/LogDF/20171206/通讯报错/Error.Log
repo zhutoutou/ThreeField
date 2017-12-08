@@ -1,0 +1,11 @@
+﻿异常时间:2017-12-06 16:43:31
+异常级别:Error
+异常位置:类[ServerClient],方法[BroadCastMessage]
+异常内容:发送消息失败并且手动断开连接无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+
+异常时间:2017-12-06 17:02:11
+异常级别:Error
+异常位置:类[DoListenAsThread_socketException],方法[TcpConnectionListener]
+异常内容:一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+
