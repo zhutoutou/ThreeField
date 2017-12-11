@@ -187,5 +187,11 @@ namespace ZIT.ThreeField.MainUI
             about.ShowDialog();
         }
 
+        private void cmdtest_Click(object sender, EventArgs e)
+        {
+            if (CoreService.GetInstance().ts != null) {
+                CoreService.GetInstance().ts.BroadCastMessage("[2050ZJHM: " + txtPhone.Text.Trim() + " *#]", Model.ClientType.TF);
+            }
+        }
     }
 }

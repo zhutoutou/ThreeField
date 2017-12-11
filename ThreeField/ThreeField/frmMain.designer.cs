@@ -38,6 +38,9 @@
             this.tabChannel = new System.Windows.Forms.TabControl();
             this.tabPageTFChannel = new System.Windows.Forms.TabPage();
             this.GridTF = new System.Windows.Forms.DataGridView();
+            this.cmdtest = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tabChannel.SuspendLayout();
             this.tabPageTFChannel.SuspendLayout();
@@ -126,12 +129,41 @@
             this.GridTF.TabIndex = 0;
             this.GridTF.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.GridYM_DataBindingComplete);
             // 
+            // cmdtest
+            // 
+            this.cmdtest.Location = new System.Drawing.Point(257, 362);
+            this.cmdtest.Name = "cmdtest";
+            this.cmdtest.Size = new System.Drawing.Size(75, 27);
+            this.cmdtest.TabIndex = 3;
+            this.cmdtest.Text = "测试";
+            this.cmdtest.UseVisualStyleBackColor = true;
+            this.cmdtest.Click += new System.EventHandler(this.cmdtest_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(2, 372);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 12);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "测试号码：";
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Location = new System.Drawing.Point(61, 365);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(190, 21);
+            this.txtPhone.TabIndex = 5;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(624, 404);
+            this.Controls.Add(this.txtPhone);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmdtest);
             this.Controls.Add(this.tabChannel);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -163,6 +195,9 @@
         private System.Windows.Forms.TabPage tabPageTFChannel;
         private System.Windows.Forms.DataGridView GridTF;
         private System.Windows.Forms.ToolStripMenuItem MenuViewLog;
+        private System.Windows.Forms.Button cmdtest;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtPhone;
     }
 }
 
